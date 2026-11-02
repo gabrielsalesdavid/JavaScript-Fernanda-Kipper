@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title description">
+  <title id="title">Trilha de aprendizagem de JavaScript</title>
+  <desc id="description">Estude fundamentos de sintaxe, compreenda valores e fluxo de execução e pratique com os exemplos HTML e JavaScript do repositório.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101c3a"/>
+      <stop offset="1" stop-color="#203e70"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#69d3ff"/>
+      <stop offset="1" stop-color="#9d9cff"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#9db9ed"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#background)"/>
+  <circle cx="1095" cy="58" r="115" fill="#5679cf" opacity=".12"/>
+  <circle cx="78" cy="375" r="145" fill="#58c5e8" opacity=".08"/>
+
+  <text x="60" y="65" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Trilha de aprendizagem</text>
+  <text x="60" y="96" fill="#c6d5f1" font-family="Segoe UI, Arial, sans-serif" font-size="16">Do reconhecimento da sintaxe à leitura do fluxo do programa</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="55" y="135" width="320" height="205" rx="18" fill="#ffffff"/>
+    <circle cx="91" cy="174" r="20" fill="#dff5ff"/>
+    <text x="91" y="181" text-anchor="middle" fill="#147aa5" font-size="18" font-weight="700">1</text>
+    <text x="122" y="181" fill="#142449" font-size="21" font-weight="700">Fundamentos</text>
+    <text x="82" y="224" fill="#425271" font-size="16">HTML, variáveis, strings,</text>
+    <text x="82" y="250" fill="#425271" font-size="16">operadores, condicionais,</text>
+    <text x="82" y="276" fill="#425271" font-size="16">funções e classes.</text>
+    <rect x="82" y="299" width="115" height="25" rx="12" fill="#eaf7ff"/>
+    <text x="139" y="317" text-anchor="middle" fill="#147aa5" font-size="13" font-weight="600">SINTAXE</text>
+
+    <path d="M390 238H425" stroke="#9db9ed" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="440" y="135" width="320" height="205" rx="18" fill="#ffffff"/>
+    <circle cx="476" cy="174" r="20" fill="#eeebff"/>
+    <text x="476" y="181" text-anchor="middle" fill="#6554b5" font-size="18" font-weight="700">2</text>
+    <text x="507" y="181" fill="#142449" font-size="21" font-weight="700">Conceitos</text>
+    <text x="467" y="224" fill="#425271" font-size="16">Tipos, conversões, truthiness,</text>
+    <text x="467" y="250" fill="#425271" font-size="16">igualdade, escopo e ordem</text>
+    <text x="467" y="276" fill="#425271" font-size="16">de execução.</text>
+    <rect x="467" y="299" width="115" height="25" rx="12" fill="#f1efff"/>
+    <text x="524" y="317" text-anchor="middle" fill="#6554b5" font-size="13" font-weight="600">COMPREENSÃO</text>
+
+    <path d="M775 238H810" stroke="#9db9ed" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="825" y="135" width="320" height="205" rx="18" fill="#ffffff"/>
+    <circle cx="861" cy="174" r="20" fill="#e5f7ef"/>
+    <text x="861" y="181" text-anchor="middle" fill="#25825b" font-size="18" font-weight="700">3</text>
+    <text x="892" y="181" fill="#142449" font-size="21" font-weight="700">Prática</text>
+    <text x="852" y="224" fill="#425271" font-size="16">Leia os exemplos, preveja</text>
+    <text x="852" y="250" fill="#425271" font-size="16">a saída e experimente no</text>
+    <text x="852" y="276" fill="#425271" font-size="16">console ou com Node.js.</text>
+    <rect x="852" y="299" width="115" height="25" rx="12" fill="#e9f8f0"/>
+    <text x="909" y="317" text-anchor="middle" fill="#25825b" font-size="13" font-weight="600">EXPERIMENTAÇÃO</text>
+  </g>
+
+  <rect x="60" y="367" width="1080" height="2" rx="1" fill="url(#accent)" opacity=".8"/>
+  <text x="600" y="398" text-anchor="middle" fill="#c6d5f1" font-family="Segoe UI, Arial, sans-serif" font-size="15">Documentação em português • exemplos locais em HTML e JavaScript</text>
+</svg>

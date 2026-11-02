@@ -1,67 +1,73 @@
-# JavaScript: fundamentos e sintaxe
+# JavaScript: fundamentos e conceitos
 
-Repositório local de estudos de JavaScript e HTML. O conteúdo atual apresenta um documento HTML básico, um arquivo JavaScript com exemplos de fundamentos da linguagem e documentação de apoio em português.
+Repositório de estudos introdutórios de JavaScript e HTML, com exemplos comentados e documentação em português. O material parte da sintaxe e avança para a interpretação de valores, tipos e fluxo de execução.
+
+![Trilha de aprendizagem: fundamentos, conceitos e prática](Docs/Img/roteiro-de-estudos.svg)
+
+## Roteiro de estudo
+
+1. Leia [Fundamentos: sintaxe básica](Docs/Documenta%C3%A7%C3%B5es/Fundamentos/sintaxe-basica.md) para reconhecer a estrutura do HTML e as construções JavaScript usadas nos exemplos.
+2. Em seguida, estude [Conceitos: valores, tipos e fluxo de execução](Docs/Documenta%C3%A7%C3%B5es/Conceitos/valores-tipos-e-fluxo.md), que explica o comportamento por trás dessas construções.
+3. Acompanhe os exemplos em [`src/Sintaxe Basica/JS/script.js`](src/Sintaxe%20Basica/JS/script.js) e [`src/Sintaxe Basica/HMTL/index.html`](src/Sintaxe%20Basica/HMTL/index.html). Experimente alterar valores e prever o resultado antes de executar.
+4. Use o console do navegador ou o Node.js para observar a saída e os erros.
+
+## Documentação
+
+| Documento | O que você vai encontrar |
+|---|---|
+| [Fundamentos — sintaxe básica](Docs/Documenta%C3%A7%C3%B5es/Fundamentos/sintaxe-basica.md) | Estrutura mínima de HTML; declaração de variáveis com `let`, `const` e `var`; console e template literals; valores, operadores e conversões; condicionais e truthiness; funções, classes, igualdade estrita, ternário, comentários e blocos. O guia também aponta os problemas concretos presentes nos exemplos. |
+| [Conceitos — valores, tipos e fluxo de execução](Docs/Documenta%C3%A7%C3%B5es/Conceitos/valores-tipos-e-fluxo.md) | Diferença entre variável e valor; `null` e `undefined`; conversão implícita e explícita; truthiness; igualdade estrita; chamada versus referência a funções; escopo; classes e instâncias; ordem de execução e carregamento de scripts no navegador. |
+
+Os documentos são complementares: **Fundamentos** apresenta a forma e a finalidade das construções; **Conceitos** explica como a linguagem as avalia e como isso afeta a execução do programa.
+
+## Exemplos incluídos
+
+O script demonstra:
+
+- Variáveis, interpolação de strings e saída com `console.log`.
+- Comparação numérica, `null`, `undefined`, conversão de tipos e `typeof`.
+- Condicionais e avaliação de valores truthy/falsy.
+- Funções, escopo, classes, instâncias, construtor e métodos.
+- Igualdade estrita (`===`) e operador ternário.
+
+A página HTML contém a estrutura mínima de um documento, metadados, um título, um parágrafo e a inclusão de um arquivo JavaScript externo.
 
 ## Estrutura do repositório
 
 ```text
 .
-|-- Docs/
-|   `-- Documentações/
-|       |-- Conceitos/
-|       |   `-- valores-tipos-e-fluxo.md
-|       `-- Fundamentos/
-|           `-- sintaxe-basica.md
-|-- src/
-|   `-- Sintaxe Basica/
-|       |-- HMTL/
-|       |   `-- index.html
-|       `-- JS/
-|           `-- script.js
-`-- .gitignore
+├── Docs/
+│   ├── Documentações/
+│   │   ├── Conceitos/
+│   │   │   └── valores-tipos-e-fluxo.md
+│   │   └── Fundamentos/
+│   │       └── sintaxe-basica.md
+│   └── Img/
+│       └── roteiro-de-estudos.svg
+└── src/
+    └── Sintaxe Basica/
+        ├── HMTL/
+        │   └── index.html
+        └── JS/
+            └── script.js
 ```
 
-O nome `HMTL` faz parte do caminho atual da pasta. Foi mantido como está para corresponder à estrutura existente.
+`HMTL` é a grafia atual da pasta no repositório; o caminho foi mantido para corresponder aos arquivos existentes.
 
-## Conteúdo de estudo
+## Como executar
 
-O arquivo `src/Sintaxe Basica/JS/script.js` demonstra:
+O projeto não possui `package.json`, dependências, scripts de build ou testes automatizados. Não é necessário instalar pacotes para explorar os exemplos.
 
-- Declaração e uso de variáveis com `let`, `const` e `var`.
-- Saída com `console.log` e interpolação com template literals.
-- Valores numéricos, strings, `null` e `undefined`, além do operador `typeof`.
-- Comparações, multiplicação, conversões entre strings e números e avaliação de valores em condicionais.
-- Funções, escopo, classes, construtor, instâncias e métodos.
-- Igualdade estrita (`===`) e operador ternário.
-
-O arquivo `src/Sintaxe Basica/HMTL/index.html` apresenta a estrutura mínima de uma página, metadados, título, cabeçalho, parágrafo e inclusão de um script externo.
-
-## Documentação
-
-- [Docs/Documentações/Fundamentos/sintaxe-basica.md](Docs/Documentações/Fundamentos/sintaxe-basica.md): referência dos elementos de sintaxe presentes nos exemplos.
-- [Docs/Documentações/Conceitos/valores-tipos-e-fluxo.md](Docs/Documentações/Conceitos/valores-tipos-e-fluxo.md): explicação de tipos, coerção, truthiness, escopo e fluxo de execução.
-
-Ordem sugerida: leia primeiro o guia de fundamentos e depois o documento de conceitos junto com os exemplos em `src/`.
-
-## Execução
-
-O repositório não possui `package.json`, dependências declaradas, scripts de build ou testes automatizados. Os exemplos podem ser explorados diretamente no navegador ou em um ambiente JavaScript como Node.js, após corrigir os problemas de execução listados abaixo.
-
-Para abrir a página, use um navegador com `src/Sintaxe Basica/HMTL/index.html`. O caminho atual do elemento `<script>` aponta para a pasta errada; considerando a estrutura existente, ele precisa ser `../JS/script.js` para localizar o arquivo JavaScript.
-
-Com Node.js instalado, o script pode ser executado pelo terminal a partir da raiz do repositório:
+Para executar o JavaScript com Node.js, use a partir da raiz:
 
 ```sh
 node "src/Sintaxe Basica/JS/script.js"
 ```
 
-Na forma atual, essa execução para ao encontrar uma referência a uma variável não declarada. Corrija o nome indicado abaixo antes de esperar que as instruções seguintes sejam executadas.
+**Atenção:** no estado atual, o script para com `ReferenceError`: declara `numer`, mas usa `numero` na linha `String(numero)`. Corrija os nomes para que coincidam antes de esperar a execução das instruções seguintes. Além disso, `(10).toString` apenas obtém a referência ao método; use `(10).toString()` para chamá-lo e realizar a conversão.
 
-## Observações sobre o estado atual
+Para abrir a página, use um navegador com `src/Sintaxe Basica/HMTL/index.html`. O `src` atual aponta para `script.js` na pasta do HTML, mas o script está na pasta irmã `JS`. Para carregá-lo, o caminho relativo deve ser `../JS/script.js`. Portanto, o JavaScript só será carregado pela página depois desse ajuste.
 
-- O código declara `numer`, mas depois usa `numero` em `String(numero)`. Como `numero` não foi declarado, ocorre `ReferenceError` e o restante do script não executa. Os nomes precisam ser consistentes.
-- `(10).toString` obtém a referência ao método, mas não o chama. Para converter o número em string, use `(10).toString()` ou `String(10)`.
-- O HTML usa `src='script.js'`, mas o arquivo está na pasta irmã `JS`; o caminho relativo correto é `../JS/script.js`.
-- A pasta de HTML está nomeada `HMTL`, e o texto do parágrafo também contém a grafia `HMTL`. O README preserva o nome real da pasta para que os caminhos funcionem.
+## Escopo
 
-O `.gitignore` exclui arquivos de log, variáveis de ambiente e diretórios comuns de dependências, build e temporários. Ele contém padrões genéricos e não implica que o repositório já tenha esses componentes.
+Este é um material introdutório e pequeno, voltado aos conceitos presentes nos exemplos atuais. O `.gitignore` prevê padrões comuns para dependências, logs e arquivos temporários, mas isso não significa que essas ferramentas ou componentes façam parte do projeto.
